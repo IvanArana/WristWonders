@@ -1,0 +1,33 @@
+.container{
+    position: relative;
+    left: 40px;
+    top: -2px;
+    width: 300%;
+    height: 200%;
+    color: gray;
+
+}
+
+.container-fluid{
+    color: white ;
+}
+
+.letras{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size:35px ;
+}
+
+.img-fluid{
+    position: relative;
+    left: 40px;
+    top: -2px;
+    width: 300%;
+    height: 200%;
+    color: gray;
+}
+
+
+
+
