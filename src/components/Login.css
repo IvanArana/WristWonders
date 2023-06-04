@@ -16,6 +16,13 @@
     color: white;
     font-weight: bold;
     margin-bottom: 0;
+    font-size:25px ;
+}
+
+.letras-r{
+    color: #3F69C8;
+    font-weight: bold;
+    margin-bottom: 0;
     font-size:35px ;
 }
 
@@ -27,6 +34,16 @@
     height: 200%;
     color: gray;
 }
+.form-label{
+    color: #3F69C8;
+    font-weight: bold;
+}
+.bs-card-bg{
+    color:#D9D9D9;
+}
+.custom-nav {
+    background-color: #D9D9D9;
+  }
 
 
 
