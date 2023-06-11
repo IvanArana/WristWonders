@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './components/Login'; 
-import Admin from './components/Admin';
-import Registro from './components/Registro'; 
+import Login from './modules/Login'; 
+import Admin from './modules/Admin';
+import Registro from './modules/Registro'; 
 import Card from './components/Card'; 
-import User from './components/User'; 
+import User from './modules/User'; 
 
 function App() {
   return (
