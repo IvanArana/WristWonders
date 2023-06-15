@@ -6,6 +6,7 @@ import Registro from './modules/Registro';
 import Card from './components/Card'; 
 import User from './modules/User'; 
 import ProductosAD from './modules/ProductosAD'; 
+import CategoriasAD from './modules/CategoriasAD'; 
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
       <Routes>
         <Route path="/Login" element={<Login />} /> 
         <Route path="/registro" element={<Registro />} /> 
-        <Route path="/" element={<Admin />} /> 
+        <Route path="/Admin" element={<Admin />} /> 
         <Route path="/principal-user" element={<User />} /> 
         <Route path="/carrito" element={<Card />} /> 
         <Route path="/ProductosAD" element={<ProductosAD />} /> 
+        <Route path="/CategoriasAD" element={<CategoriasAD />} /> 
       </Routes>
     </Router>
   );

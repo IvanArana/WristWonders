@@ -3,6 +3,7 @@ import { BsPersonFill } from 'react-icons/bs';
 import { FaShoppingCart } from 'react-icons/fa';
 import logo from '../img/logo.png';
 import { animateScroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   
@@ -38,9 +39,9 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/" style={{ color: '#3F69C8' }}>
+              <Link className="nav-link" to="/principal-user" style={{ color: '#3F69C8' }}>
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/categorias" style={{ color: '#3F69C8' }}>
