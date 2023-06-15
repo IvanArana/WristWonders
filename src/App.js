@@ -5,7 +5,7 @@ import Admin from './modules/Admin';
 import Registro from './modules/Registro'; 
 import Card from './components/Card'; 
 import User from './modules/User'; 
-import Productos from './modules/Productos'; 
+import ProductosAD from './modules/ProductosAD'; 
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Admin />} /> 
         <Route path="/principal-user" element={<User />} /> 
         <Route path="/carrito" element={<Card />} /> 
-        <Route path="/Productos" element={<Productos />} /> 
+        <Route path="/ProductosAD" element={<ProductosAD />} /> 
       </Routes>
     </Router>
   );

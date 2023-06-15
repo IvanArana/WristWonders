@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar';
 import { Link } from 'react-router-dom';
 import '../css/Admin.css';
 
-const Productos = () => {
+const ProductosAD = () => {
   return (
     <div className="container-lo">
       <Sidebar />
@@ -89,4 +89,4 @@ const Productos = () => {
   );
 };
 
-export default Productos;
+export default ProductosAD;
