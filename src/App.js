@@ -7,6 +7,7 @@ import Card from './components/Card';
 import User from './modules/User'; 
 import ProductosAD from './modules/ProductosAD'; 
 
+
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/principal-user" element={<User />} /> 
         <Route path="/carrito" element={<Card />} /> 
         <Route path="/ProductosAD" element={<ProductosAD />} /> 
+
       </Routes>
     </Router>
   );

@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { BsPersonFill } from 'react-icons/bs';
 import { FaShoppingCart } from 'react-icons/fa';
 import logo from '../img/logo.png';
 import { animateScroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   
@@ -23,7 +25,6 @@ function Navbar() {
             height="90"
             className="d-inline-block align-top"
           />
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -38,25 +39,24 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/" style={{ color: '#3F69C8' }}>
+              <Link className="nav-link" to="/" style={{ color: '#3F69C8' }}>
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/categorias" style={{ color: '#3F69C8' }}>
+              <Link className="nav-link" to="/categorias" style={{ color: '#3F69C8' }}>
                 Categorías
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/sobre-nosotros" style={{ color: '#3F69C8' }}>
+              <Link className="nav-link" to="/sobre-nosotros" style={{ color: '#3F69C8' }}>
                 Sobre nosotros
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-            <button className="nav-link btn-link" style={{ color: '#3F69C8' }} onClick={handleScrollToFooter}>
-              Contacto
-            </button>
-
+              <Link className="nav-link" to="/contacto" style={{ color: '#3F69C8' }}>
+                Contacto
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav">
@@ -73,6 +73,7 @@ function Navbar() {
                   <BsPersonFill />
                 </button>
               </a>
+
             </li>
           </ul>
         </div>

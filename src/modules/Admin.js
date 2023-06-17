@@ -1,3 +1,4 @@
+
 import '../css/Admin.css';
 import React from 'react';
 import { FaClock, FaUser } from 'react-icons/fa';
@@ -56,3 +57,4 @@ const Admin = () => {
 };
 
 export default Admin;
+
