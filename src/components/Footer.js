@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { BsPersonFill } from 'react-icons/bs';
-import { FaShoppingCart } from 'react-icons/fa';
+
 
 function Footer() {
  

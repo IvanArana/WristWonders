@@ -1,0 +1,88 @@
+
+  
+.sidebar {
+    width: 300px;
+    height: 700px;
+    background-color: #d9d9d9;
+    padding: 20px;
+
+}
+  
+.content {
+    flex: 1;
+    padding: 20px;
+}
+  
+.logo-ho {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    margin-top:10% ;
+    margin-left: 10%;
+}
+  
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+  
+.menu li {
+    margin-bottom: 10px;
+}
+  
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: #3f69c8;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+  
+.menu li a:hover {
+    background-color: #3f69c8;
+    color: white;
+}
+  
+.logout {
+    bottom: 20px;
+    left: 20px;
+    width: calc(300px - 40px);
+    margin-top: 150px;
+}
+  
+.logout a {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: #2e4b90;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+  
+.logout a:hover {
+    background-color: #2e4b90;
+}
+
+.container-lo {
+    display: flex;
+}
+  
+ 
+  
+body {
+ background: #eee;
+}
+  
+.product-image {
+  width: 100%;
+}
+   
+h5 {
+ font-weight: 400;
+}
+  
+
+  

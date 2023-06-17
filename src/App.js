@@ -5,16 +5,20 @@ import Admin from './modules/Admin';
 import Registro from './modules/Registro'; 
 import Card from './components/Card'; 
 import User from './modules/User'; 
+import ProductosAD from './modules/ProductosAD'; 
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} /> 
+        <Route path="/Login" element={<Login />} /> 
         <Route path="/registro" element={<Registro />} /> 
-        <Route path="/principal-admin" element={<Admin />} /> 
+        <Route path="/" element={<Admin />} /> 
         <Route path="/principal-user" element={<User />} /> 
         <Route path="/carrito" element={<Card />} /> 
+        <Route path="/ProductosAD" element={<ProductosAD />} /> 
+
       </Routes>
     </Router>
   );
