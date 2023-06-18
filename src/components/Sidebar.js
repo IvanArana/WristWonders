@@ -13,15 +13,15 @@ const Sidebar = () => {
 
       <ul className="menu">
         <li>
-          <a href="#" className="active">
+          <Link to="/Admin" className="active">
             Dashboard
-          </a>
+          </Link>
         </li>
         <li>
-          <Link to="/Productos">Productos</Link>
+          <Link to="/ProductosAD">Productos</Link>
         </li>
         <li>
-          <a href="#">Categorías</a>
+          <Link to="/CategoriasAD">Categorías</Link>
         </li>
         <li>
           <a href="#">Usuarios</a>
