@@ -7,4 +7,3 @@ export default class ProductosAD extends Component {
     )
   }
 }
-

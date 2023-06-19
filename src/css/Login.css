@@ -1,54 +1,55 @@
-.container {
-  position: relative;
-  left: 40px;
-  top: -2px;
-  width: 300%;
-  height: 200%;
-  color: gray;
+.container{
+    position: relative;
+    left: 40px;
+    top: -2px;
+    width: 300%;
+    height: 200%;
+    color: gray;
+
 }
 
-.container-fluid {
-  color: white;
+.container-fluid{
+    color: white ;
 }
 
-.letras {
-  color: white;
-  font-weight: bold;
-  margin-bottom: 0;
-  font-size: 25px;
+.letras{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size:25px ;
 }
 
-.letras-r {
-  color: #3f69c8;
-  font-weight: bold;
-  margin-bottom: 0;
-  font-size: 35px;
+.letras-r{
+    color: #3F69C8;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size:35px ;
 }
 
-.img-fluid {
-  position: relative;
-  left: 40px;
-  top: -2px;
-  width: 300%;
-  height: 200%;
-  color: gray;
+.img-fluid{
+    position: relative;
+    left: 40px;
+    top: -2px;
+    width: 300%;
+    height: 200%;
+    color: gray;
 }
-.form-label {
-  color: #3f69c8;
-  font-weight: bold;
+.form-label{
+    color: #3F69C8;
+    font-weight: bold;
 }
-.bs-card-bg {
-  color: #d9d9d9;
+.bs-card-bg{
+    color:#D9D9D9;
 }
 .custom-nav {
-  background-color: #d9d9d9;
-}
+    background-color: #D9D9D9;
+  }
 
-.producto {
-  width: 100%;
-  height: auto;
-}
-/* Usuario.css */
+  .producto {
+    width: 100%;
+    height: auto;
+  }
+  /* Usuario.css */
 
 .usuario {
   margin-top: 20px;
@@ -129,4 +130,3 @@
   border: 2px solid #ffffff;
   border-radius: 6px;
 }
-
