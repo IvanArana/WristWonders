@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-secondary custom-nav">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/Login">
+        <a className="navbar-brand" href="/Login"/>
           <img
             src={logo}
             alt="Logo"
