@@ -28,7 +28,7 @@ const Sidebar = () => {
         </li>
       </ul>
       <div className="logout">
-        <Link to="/Login">Cerrar Sesión</Link>
+        <Link to="/">Cerrar Sesión</Link>
       </div>
     </div>
   );
