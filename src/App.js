@@ -7,6 +7,7 @@ import Card from './components/Card';
 import User from './modules/User';
 import ProductosAD from './modules/ProductosAD'; 
 import CategoriasAD from './modules/CategoriasAD'; 
+import CategoriaUser from './modules/CategoriaUser';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/carrito" element={<Card />} /> 
         <Route path="/ProductosAD" element={<ProductosAD />} /> 
         <Route path="/CategoriasAD" element={<CategoriasAD />} /> 
+        <Route path="/CategoriaUser" element={<CategoriaUser/>}/>
 
       </Routes>
     </Router>
