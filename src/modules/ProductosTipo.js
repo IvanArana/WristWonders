@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import { BsPersonFill } from 'react-icons/bs';
 import { FaShoppingCart } from 'react-icons/fa';
 
-function Usuario() {
+function ProductosTipo() {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -22,14 +22,14 @@ function Usuario() {
       <Navbar />
 
       <div className="usuario">
-        <h1>Catálogo de Productos</h1>
+        <h1 className='titulos'>Catálogo de Productos por tipo</h1>
         <div className="catalogo">
           {productos.map((producto) => (
             <div key={producto.id} className="producto">
               <img src={producto.url} alt={producto.title} />
-              <h3>{producto.title}</h3>
-             
-              <button>Ver producto</button>
+              <h3 className='nombres'>{producto.title}</h3>
+              <p className='precios'>Precio: ${producto.price}</p>
+              <button>Ver detalles</button>
             </div>
           ))}
         </div>
@@ -40,4 +40,4 @@ function Usuario() {
   );
 }
 
-export default Usuario;
+export default ProductosTipo;

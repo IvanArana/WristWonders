@@ -7,6 +7,10 @@ import Card from './components/Card';
 import User from './modules/User';
 import ProductosAD from './modules/ProductosAD'; 
 import CategoriasAD from './modules/CategoriasAD'; 
+import CategoriaUser from './modules/CategoriaUser';
+import ProductosTipo from './modules/ProductosTipo';
+import ProductosMaterial from './modules/ProductosMaterial';
+import ProductosMarca from './modules/ProductosMarca';
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
         <Route path="/carrito" element={<Card />} /> 
         <Route path="/ProductosAD" element={<ProductosAD />} /> 
         <Route path="/CategoriasAD" element={<CategoriasAD />} /> 
+        <Route path="/CategoriaUser" element={<CategoriaUser/>}/>
+        <Route path="/ProductosTipo" element={<ProductosTipo/>}/>
+        <Route path="/ProductosMaterial" element={<ProductosMaterial/>}/>
+        <Route path="/ProductosMarca" element={<ProductosMarca/>}/>
 
       </Routes>
     </Router>

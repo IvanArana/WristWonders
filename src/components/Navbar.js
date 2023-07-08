@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { BsPersonFill } from 'react-icons/bs';
 import { FaShoppingCart } from 'react-icons/fa';
 import { animateScroll } from 'react-scroll';
+import Image from '../img/logo.png';
 
 function Navbar() {
   const handleScrollToFooter = () => {
@@ -12,15 +13,16 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-secondary custom-nav">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/Registro">
+        <Link className="navbar-brand" to="/">
           <img
-            src="https://drive.google.com/uc?export=view&id=1sQmsbYHZ79oB-gFCqrRDRmbxN3CAkQtp"
+            src={Image}
             alt="Logo"
+            className="d-inline-block align-top"
             width="160"
             height="90"
-            className="d-inline-block align-top"
           />
         </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -40,7 +42,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/categorias" style={{ color: '#3F69C8' }}>
+              <Link className="nav-link" to="/CategoriaUser" style={{ color: '#3F69C8' }}>
                 Categorías
               </Link>
             </li>
