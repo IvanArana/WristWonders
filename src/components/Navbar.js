@@ -42,7 +42,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/categorias" style={{ color: '#3F69C8' }}>
+              <Link className="nav-link" to="/CategoriaUser" style={{ color: '#3F69C8' }}>
                 Categorías
               </Link>
             </li>

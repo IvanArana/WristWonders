@@ -12,9 +12,10 @@ function CategoriaUser() {
   const [productosPorTipo, setProductosPorTipo] = useState({});
   const [productosPorMaterial, setProductosPorMaterial] = useState({});
   const [productosPorMarca, setProductosPorMarca] = useState({});
+  const maxImagenesPorCategoria = 3; // Número máximo de imágenes a mostrar por categoría
 
   useEffect(() => {//   api de prueba https://fakestoreapi.com/products
-    fetch (' https://jsonplaceholder.typicode.com/photos?_limit=6')
+    fetch('https://fakestoreapi.com/products')
       .then((response) => response.json())
       .then((data) => {
         setProductos(data);
@@ -54,54 +55,72 @@ function CategoriaUser() {
       <Navbar />
 
       <div className="usuario">
-        <h1>Catálogo de Productos</h1>
         <div>
-          <h2>Por tipo</h2>
+          <Link to="/ProductosTipo" className="link-style">
+            <h2>Por tipo</h2>
+          </Link>
           {Object.keys(productosPorTipo).map((tipo) => (
             <div key={tipo}>
-              <h3>{tipo}</h3>
-              {productosPorTipo[tipo].map((producto) => (
-                <div key={producto.id} className="producto">
-                  <img src={producto.image} alt={producto.name} />
-                  <h4>{producto.name}</h4>
-                  <p>Precio: ${producto.price}</p>
-                  <button>Ver detalles</button>
-                </div>
-              ))}
+              
+              <div className="product-list">
+                {productosPorTipo[tipo].slice(0, maxImagenesPorCategoria).map((producto) => (
+                  <div key={producto.id} className="producto">
+                    <img src={producto.image} alt={producto.name} />
+                    <h4>{producto.name}</h4>
+                    <p>Tipo: {}</p>
+                    <Link to="/ProductosTipo">
+                      <button>Ver Productos</button>
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
-
+        
         <div>
-          <h2>Por material</h2>
+          <Link to="/ProductosMaterial" className="link-style">
+            <h2>Por material</h2>
+          </Link>
           {Object.keys(productosPorMaterial).map((material) => (
             <div key={material}>
-              <h3>{material}</h3>
-              {productosPorMaterial[material].map((producto) => (
-                <div key={producto.id} className="producto">
-                  <img src={producto.image} alt={producto.name} />
-                  <h4>{producto.name}</h4>
-                  <p>Precio: ${producto.price}</p>
-                  <button>Ver detalles</button>
-                </div>
-              ))}
+              
+              <div className="product-list">
+                {productosPorMaterial[material].slice(0, maxImagenesPorCategoria).map((producto) => (
+                  <div key={producto.id} className="producto">
+                    <img src={producto.image} alt={producto.name} />
+                    <h4>{producto.name}</h4>
+                    <p>Material: {}</p>
+                    <Link to="/ProductosMaterial">
+                      <button>Ver Productos</button>
+                    </Link>
+                  
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
-
+            
         <div>
-          <h2>Por marca</h2>
+          <Link to="/ProductosMarca" className="link-style">
+            <h2>Por marca</h2>
+          </Link>
           {Object.keys(productosPorMarca).map((marca) => (
             <div key={marca}>
-              <h3>{marca}</h3>
-              {productosPorMarca[marca].map((producto) => (
-                <div key={producto.id} className="producto">
-                  <img src={producto.image} alt={producto.name} />
-                  <h4>{producto.name}</h4>
-                  <p>Precio: ${producto.price}</p>
-                  <button>Ver detalles</button>
-                </div>
-              ))}
+             
+              <div className="product-list">
+                {productosPorMarca[marca].slice(0, maxImagenesPorCategoria).map((producto) => (
+                  <div key={producto.id} className="producto">
+                    <img src={producto.image} alt={producto.name} />
+                    <h4>{producto.name}</h4>
+                    <p>Marca: {}</p>
+                    <Link to="/ProductosMarca">
+                      <button>Ver Productos</button>
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
