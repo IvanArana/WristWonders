@@ -18,9 +18,9 @@ const CategoriasAD = () => {
             <div className="card-body d-flex flex-column align-items-center">
               <h1 className="card-title">Tipos de Reloj</h1>
               <div style={{ marginTop: '30%' }}>
-                <button className="btn btn-primary btn-sm" type="button">
+                <Link to="/TipoReloj" className="btn btn-primary btn-sm" type="button">
                   Detalles
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -29,9 +29,9 @@ const CategoriasAD = () => {
             <div className="card-body d-flex flex-column align-items-center">
               <h1 className="card-title">Materiales</h1>
               <div style={{ marginTop: 'auto' }}>
-                <button className="btn btn-primary btn-sm" type="button">
+                <Link to="/Materiales" className="btn btn-primary btn-sm" type="button">
                   Detalles
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -40,9 +40,9 @@ const CategoriasAD = () => {
             <div className="card-body d-flex flex-column align-items-center">
               <h1 className="card-title">Marcas</h1>
               <div style={{ marginTop: 'auto' }}>
-                <button className="btn btn-primary btn-sm" type="button">
+                <Link  to="/Marcas" className="btn btn-primary btn-sm" type="button">
                   Detalles
-                </button>
+                </Link>
               </div>
             </div>
           </div>
