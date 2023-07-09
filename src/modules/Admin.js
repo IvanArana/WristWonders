@@ -16,7 +16,7 @@ const Admin = () => {
 
         <div className="row">
           <div className="col-md-6">
-            <button className="card mb-3" style={{ backgroundColor: '#3F69C8', width: '240%', height: '200px', left:'50px' }}>
+            <button className="card mb-3" style={{ backgroundColor: '#3F69C8', width: '97%', height: '200px', left:'20px' }}>
               <div className="card-body d-flex flex-column justify-content-center align-items-center">
                 <FaClock size={48} />
                 <h5 className="card-title mt-3">Productos</h5>
@@ -24,7 +24,7 @@ const Admin = () => {
             </button>
           </div>
           <div className="col-md-6">
-            <button className="card mb-3" style={{ backgroundColor: '#F2EC50', width: '240%', height: '200px', left:'300px' }}>
+            <button className="card mb-3" style={{ backgroundColor: '#F2EC50', width: '97%', height: '200px', left:'45px' }}>
               <div className="card-body d-flex flex-column justify-content-center align-items-center">
                 <h5 className="card-title">Categorías</h5>
               </div>
@@ -34,7 +34,7 @@ const Admin = () => {
 
         <div className="row">
           <div className="col-md-6">
-            <button  className="card mb-3" style={{ backgroundColor: '#8C3FC8', width: '240%', height: '200px', left:'50px' }}>
+            <button  className="card mb-3" style={{ backgroundColor: '#8C3FC8', width: '97%', height: '200px', left:'20px' }}>
               <div className="card-body d-flex flex-column justify-content-center align-items-center">
                 <h1 className="card-title">Admins</h1>
               </div> 
@@ -42,7 +42,7 @@ const Admin = () => {
             </button>
           </div>
           <div className="col-md-6">
-            <button className="card mb-3" style={{ backgroundColor: '#50F260', width: '240%', height: '200px', left:'300px' }}>
+            <button className="card mb-3" style={{ backgroundColor: '#50F260', width: '97%', height: '200px', left:'45px' }}>
               <div className="card-body d-flex flex-column justify-content-center align-items-center">
                 <FaUser size={48} />
                 <h5 className="card-title mt-3">Usuarios</h5>

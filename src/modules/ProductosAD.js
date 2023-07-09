@@ -9,10 +9,15 @@ const ProductosAD = () => {
       <Sidebar />
 
       <div id="content" className="p-4 p-md-5 pt-5">
+        
         <h2 className="mb-4" style={{ color: '#2e4b90' }}>
           Productos
+          
+          <Link to="/AgregarProductos" className="btn btn-light"
+           style={{ color: "#FFFFFF", backgroundColor:"#2e4b90" }}>
+            Agregar Productos
+          </Link>
         </h2>
-        <button className="btn btn-warning btn-sm" type="button" style={{ backgroundColor: '#2e4b90', color:'#eee', borderRadius:'#2e4b90' }}>Agregar producto</button>
 
         <div className="card card-body mt-3">
           <div className="d-flex align-items-center">
@@ -27,17 +32,14 @@ const ProductosAD = () => {
             <div className="flex-grow-1">
               <h5>AQ-230GA-9</h5>
               <div className="d-flex flex-row">
-             
                 <span>Hora dual</span>
               </div>
-              
               <p className="text-justify text-truncate para mb-0">
-                HOLA ESTE ES EL RELOJ 
+                HOLA ESTE ES EL RELOJ
               </p>
               <h4 className="mr-1">$5,599.00</h4>
             </div>
             <div className="ml-auto text-center">
-            
               <div className="d-flex flex-column mt-4">
                 <button className="btn btn-warning btn-sm" type="button">
                   Editar
@@ -49,6 +51,7 @@ const ProductosAD = () => {
             </div>
           </div>
         </div>
+
         <div className="card card-body mt-3">
           <div className="d-flex align-items-center">
             <div className="mr-3">
@@ -62,17 +65,14 @@ const ProductosAD = () => {
             <div className="flex-grow-1">
               <h5>AQ-230GA-9</h5>
               <div className="d-flex flex-row">
-             
                 <span>Hora dual</span>
               </div>
-              
               <p className="text-justify text-truncate para mb-0">
-                HOLA ESTE ES EL RELOJ 
+                HOLA ESTE ES EL RELOJ
               </p>
               <h4 className="mr-1">$5,599.00</h4>
             </div>
             <div className="ml-auto text-center">
-            
               <div className="d-flex flex-column mt-4">
                 <button className="btn btn-warning btn-sm" type="button">
                   Editar
