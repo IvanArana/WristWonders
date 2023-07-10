@@ -16,6 +16,8 @@ import CategoriaUser from './modules/CategoriaUser';
 import ProductosTipo from './modules/ProductosTipo';
 import ProductosMaterial from './modules/ProductosMaterial';
 import ProductosMarca from './modules/ProductosMarca';
+import DetallesProductos from './modules/DetallesProductos'
+
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
         <Route path="/Materiales" element={<Materiales />} />
         <Route path="/TipoReloj" element={<TipoReloj />} />
         <Route path="/Marcas" element={<Marcas />} />
+        <Route path="/DetallesProductos" element={<DetallesProductos/>}/>
       </Routes>
     </Router>
   );
