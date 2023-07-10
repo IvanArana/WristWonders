@@ -29,7 +29,9 @@ function ProductosMarca() {
               <img src={producto.url} alt={producto.title} />
               <h3 className='nombres'>{producto.title}</h3>
               <p>Precio: ${producto.price}</p>
+              <Link to="/DetallesProductos">
               <button>Ver detalles</button>
+              </Link>
             </div>
           ))}
         </div>
