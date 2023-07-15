@@ -114,4 +114,3 @@ app.get("/productos/:id", (req, res) => {
   });
   
   // ...
-  
