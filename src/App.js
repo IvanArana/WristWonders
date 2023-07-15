@@ -8,7 +8,7 @@ import Marcas from './modules/Marcas';
 import Login from './modules/Login';
 import Admin from './modules/Admin';
 import Registro from './modules/Registro';
-import Card from './components/Card';
+import Carrito from './modules/Carrito';
 import User from './modules/User';
 import ProductosAD from './modules/ProductosAD';
 import CategoriasAD from './modules/CategoriasAD';
@@ -16,8 +16,8 @@ import CategoriaUser from './modules/CategoriaUser';
 import ProductosTipo from './modules/ProductosTipo';
 import ProductosMaterial from './modules/ProductosMaterial';
 import ProductosMarca from './modules/ProductosMarca';
-import DetallesProductos from './modules/DetallesProductos'
-
+import DetallesProductos from './modules/DetallesProductos';
+import DatosUser from './modules/DatosUser';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path="/registro" element={<Registro />} />
         <Route path="/Admin" element={<Admin />} />
         <Route path="/principal-user" element={<User />} />
-        <Route path="/carrito" element={<Card />} />
+        <Route path="/carrito" element={<Carrito />} />
         <Route path="/ProductosAD" element={<ProductosAD />} />
         <Route path="/CategoriasAD" element={<CategoriasAD />} />
         <Route path="/AgregarProductos" element={<AgregarProductos />} />
@@ -40,6 +40,7 @@ function App() {
         <Route path="/TipoReloj" element={<TipoReloj />} />
         <Route path="/Marcas" element={<Marcas />} />
         <Route path="/DetallesProductos" element={<DetallesProductos/>}/>
+        <Route path="/DatosUser" element={<DatosUser/>}/>
       </Routes>
     </Router>
   );
