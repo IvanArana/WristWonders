@@ -129,6 +129,24 @@ router.post("/login", (req, res) => {
 router.post("/register", (req, res) => {
   const { nombre, apellidos, correo, password, direccion } = req.body;
   db.query(
+    'SELECT * FROM usuarios WHERE correo = ?',
+    [correo],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Error en el servidor');
+      } else {
+        if (result.length > 0) {
+          res.status(401).send('El correo ya está registrado');
+        } else {
+          insertarUsuario(nombre, apellidos, correo, password, direccion, res);
+        }
+      }
+    }
+  );
+});
+const insertarUsuario = ((nombre, apellidos, correo, password, direccion, res) => {
+  db.query(
     'INSERT INTO usuarios (nombre, apellidos, correo, password, direccion) VALUES (?, ?, ?, ?, ?)',
     [nombre, apellidos, correo, password, direccion ?? 'Sin Dirección'],
     (err, result) => {
