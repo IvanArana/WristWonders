@@ -20,30 +20,30 @@ import DetallesProductos from './modules/DetallesProductos';
 import DatosUser from './modules/DatosUser';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/registro" element={<Registro />} />
-        <Route path="/Admin" element={<Admin />} />
-        <Route path="/principal-user" element={<User />} />
-        <Route path="/carrito" element={<Carrito />} />
-        <Route path="/ProductosAD" element={<ProductosAD />} />
-        <Route path="/CategoriasAD" element={<CategoriasAD />} />
-        <Route path="/AgregarProductos" element={<AgregarProductos />} />
-        <Route path="/confirmacion" element={<Confirmacion />} />
-        <Route path="/CategoriaUser" element={<CategoriaUser />} />
-        <Route path="/ProductosTipo" element={<ProductosTipo />} />
-        <Route path="/ProductosMaterial" element={<ProductosMaterial />} />
-        <Route path="/ProductosMarca" element={<ProductosMarca />} />
-        <Route path="/Materiales" element={<Materiales />} />
-        <Route path="/TipoReloj" element={<TipoReloj />} />
-        <Route path="/Marcas" element={<Marcas />} />
-        <Route path="/DetallesProductos" element={<DetallesProductos/>}/>
-        <Route path="/DatosUser" element={<DatosUser/>}/>
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/registro" element={<Registro />} />
+                <Route path="/Admin" element={<Admin />} />
+                <Route path="/principal-user" element={<User />} />
+                <Route path="/carrito" element={<Carrito />} />
+                <Route path="/ProductosAD" element={<ProductosAD />} />
+                <Route path="/CategoriasAD" element={<CategoriasAD />} />
+                <Route path="/AgregarProductos" element={<AgregarProductos />} />
+                <Route path="/confirmacion" element={<Confirmacion />} />
+                <Route path="/CategoriaUser" element={<CategoriaUser />} />
+                <Route path="/ProductosTipo" element={<ProductosTipo />} />
+                <Route path="/ProductosMaterial" element={<ProductosMaterial />} />
+                <Route path="/ProductosMarca" element={<ProductosMarca />} />
+                <Route path="/Materiales" element={<Materiales />} />
+                <Route path="/TipoReloj" element={<TipoReloj />} />
+                <Route path="/Marcas" element={<Marcas />} />
+                <Route path="/DetallesProductos" element={<DetallesProductos/>}/>
+                <Route path="/DatosUser" element={<DatosUser/>}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
