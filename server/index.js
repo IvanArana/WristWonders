@@ -1,5 +1,5 @@
-if(process.env.NODE_ENV !== "production"){require('dotenv').config();}
-const express = require("express");
+if(process.env.NODE_ENV !== 'production'){require('dotenv').config();}
+const express = require('express');
 const app = express();
 const cors = require('cors');
 const productosController = require('./controllers/productosController');
@@ -11,5 +11,5 @@ app.use('/productos', productosController);
 app.use('/usuarios', usuariosController);
 
 app.listen(process.env.PORT,()=>{
-    console.log(`Running on port ${process.env.PORT}`)
-})
+    console.log(`Running on port ${process.env.PORT}`);
+});
