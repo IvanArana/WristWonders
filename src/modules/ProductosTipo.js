@@ -4,9 +4,6 @@ import '../css/Login.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-import { BsPersonFill } from 'react-icons/bs';
-import { FaShoppingCart } from 'react-icons/fa';
-
 function ProductosTipo() {
     const [productos, setProductos] = useState([]);
 
