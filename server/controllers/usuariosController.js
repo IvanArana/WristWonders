@@ -2,107 +2,107 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 
-router.get('/count', (req, res) => {
-    db.query('SELECT COUNT(IsAdmin) AS total FROM usuarios WHERE IsAdmin = 1', (err, result) => {
-        if (err) {
-            console.log(err);
-            res.status(500).send('Error en el servidor');
+router.get("/count", (req, res) => {
+  db.query('SELECT COUNT(IsAdmin) AS total FROM usuarios WHERE IsAdmin = 1', (err, result) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send('Error en el servidor');
+    } else {
+      const count = result[0].total;
+      res.send({ count });
+    }
+  });
+});
+
+router.get("/", (req, res) => {
+  db.query(
+    'SELECT * FROM usuarios',
+    (err, result) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.send(result);
+      }
+    }
+  );
+});
+
+router.get("/:id", (req, res) => {
+  const { id } = req.params;
+  db.query(
+    'SELECT * FROM usuarios WHERE idusuario = ?',
+    [id],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Error en el servidor');
+      } else {
+        if (result.length > 0) {
+          const usuario = result[0];
+          res.send(usuario);
         } else {
-            const count = result[0].total;
-            res.send({ count });
+          res.status(404).send('Usuario no encontrado');
         }
-    });
+      }
+    }
+  );
 });
 
-router.get('/', (req, res) => {
-    db.query(
-        'SELECT * FROM usuarios',
-        (err, result) => {
-            if (err) {
-                console.log(err);
-            } else {
-                res.send(result);
-            }
-        }
-    );
+router.post("/", (req, res) => {
+  const { nombre, email } = req.body;
+  db.query(
+    'INSERT INTO usuarios (nombre, email) VALUES (?, ?)',
+    [nombre, email],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Error en el servidor');
+      } else {
+        res.send('Usuario creado exitosamente');
+      }
+    }
+  );
 });
 
-router.get('/:id', (req, res) => {
-    const { id } = req.params;
-    db.query(
-        'SELECT * FROM usuarios WHERE id = ?',
-        [id],
-        (err, result) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send('Error en el servidor');
-            } else {
-                if (result.length > 0) {
-                    const usuario = result[0];
-                    res.send(usuario);
-                } else {
-                    res.status(404).send('Usuario no encontrado');
-                }
-            }
+router.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const { nombre, email } = req.body;
+  db.query(
+    'UPDATE usuarios SET nombre = ?, email = ? WHERE idusuario = ?',
+    [nombre, email, id],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Error en el servidor');
+      } else {
+        if (result.affectedRows > 0) {
+          res.send('Usuario actualizado exitosamente');
+        } else {
+          res.status(404).send('Usuario no encontrado');
         }
-    );
+      }
+    }
+  );
 });
 
-router.post('/', (req, res) => {
-    const { nombre, email } = req.body;
-    db.query(
-        'INSERT INTO usuarios (nombre, email) VALUES (?, ?)',
-        [nombre, email],
-        (err, result) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send('Error en el servidor');
-            } else {
-                res.send('Usuario creado exitosamente');
-            }
+router.delete("/:id", (req, res) => {
+  const { id } = req.params;
+  db.query(
+    'DELETE FROM usuarios WHERE idusuario = ?',
+    [id],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Error en el servidor');
+      } else {
+        if (result.affectedRows > 0) {
+          res.send('Usuario eliminado exitosamente');
+        } else {
+          res.status(404).send('Usuario no encontrado');
         }
-    );
-});
-
-router.put('/:id', (req, res) => {
-    const { id } = req.params;
-    const { nombre, email } = req.body;
-    db.query(
-        'UPDATE usuarios SET nombre = ?, email = ? WHERE id = ?',
-        [nombre, email, id],
-        (err, result) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send('Error en el servidor');
-            } else {
-                if (result.affectedRows > 0) {
-                    res.send('Usuario actualizado exitosamente');
-                } else {
-                    res.status(404).send('Usuario no encontrado');
-                }
-            }
-        }
-    );
-});
-
-router.delete('/:id', (req, res) => {
-    const { id } = req.params;
-    db.query(
-        'DELETE FROM usuarios WHERE id = ?',
-        [id],
-        (err, result) => {
-            if (err) {
-                console.log(err);
-                res.status(500).send('Error en el servidor');
-            } else {
-                if (result.affectedRows > 0) {
-                    res.send('Usuario eliminado exitosamente');
-                } else {
-                    res.status(404).send('Usuario no encontrado');
-                }
-            }
-        }
-    );
+      }
+    }
+  );
 });
 
 router.post('/login', (req, res) => {

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
-import { Link } from 'react-router-dom';
 import '../css/Admin.css';
 
 const AgregarProductos = () => {
