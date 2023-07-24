@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm ci && npm run build
+      - run: npm ci
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ARDUINO_2E4C4 }}'
-          projectId: arduino-2e4c4
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WRISTWONDERS_419A8 }}'
+          projectId: wristwonders-419a8
