@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+:root{
+  /* colores de texto e interfaz */
+  --clr-white: #FFFFFF;
+  --clr-gray: #D9D9D9;
+  --clr-blue: #3F69C8;
+  --clr-light-blue:#5082F2;
+  --clr-purble:#8C3FC8;
+  --clr-light-purble:#AB50F2;
+  --clr-yellow:#C8BA3F;
+  --clr-light-yellow:#F2EC50;
+  --clr-green:#3FC84D;
+  --clr-light-green:#50F260;
+  --clr-dark: #1E1E1E;
+  /*Propiedades para textos*/
+  --xxl-fnt-sz: 64px;
+  --xl-fnt-sz: 36px;
+  --lg-fnt-sz: 24px;
+  --md-fnt-sz: 20;
+  --sm-fnt-sz: 16;
+  --title-fnt-wt: 500;
+  --desc-fnt-wt: 100;
+  /*Propiedades de las cards*/
+  --crd-wt:295px;
+  --crd-ht:396px;
+  --crd-bx-shw: 2px 4px 0px rgba(0, 0, 0, 0.5);
+  --crd-brd: 1px solid #C6C6C6;
+}
