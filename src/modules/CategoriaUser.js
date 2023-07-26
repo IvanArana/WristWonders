@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 function CategoriaUser() {
-    const [productos, setProductos] = useState([]);
+    const [ setProductos] = useState([]);
     const [productosPorTipo, setProductosPorTipo] = useState({});
     const [productosPorMaterial, setProductosPorMaterial] = useState({});
     const [productosPorMarca, setProductosPorMarca] = useState({});

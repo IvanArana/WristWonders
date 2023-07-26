@@ -8,6 +8,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended'
     ],
+    'ignorePatterns': ['*.test.js'],
     'overrides': [
         {
             'env': {
@@ -29,6 +30,10 @@ module.exports = {
         'react'
     ],
     'rules': {
+        'no-unused-vars': [
+            'off'
+        ],
+        'react/prop-types': 'off',
         'indent': [
             'error',
             4
@@ -44,6 +49,11 @@ module.exports = {
         'semi': [
             'error',
             'always'
-        ]
+        ],
+    },
+    'settings':{
+        'react':{
+            'version': 'detect'
+        }
     }
 };
