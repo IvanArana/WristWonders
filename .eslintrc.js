@@ -8,7 +8,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended'
     ],
-    'ignorePatterns': ['*.test.js'],
+    'ignorePatterns': ['*.test.js', 'build/'],
     'overrides': [
         {
             'env': {
