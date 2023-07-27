@@ -18,6 +18,7 @@ import ProductosMaterial from './modules/ProductosMaterial';
 import ProductosMarca from './modules/ProductosMarca';
 import DetallesProductos from './modules/DetallesProductos';
 import DatosUser from './modules/DatosUser';
+import EditarProducto from './modules/EditarProducto';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/ProductosAD" element={<ProductosAD />} />
                 <Route path="/CategoriasAD" element={<CategoriasAD />} />
                 <Route path="/AgregarProductos" element={<AgregarProductos />} />
+                <Route path="/EditarProducto/:id" element={<EditarProducto/>}/>
                 <Route path="/confirmacion" element={<Confirmacion />} />
                 <Route path="/CategoriaUser" element={<CategoriaUser />} />
                 <Route path="/ProductosTipo" element={<ProductosTipo />} />
