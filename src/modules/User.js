@@ -6,14 +6,6 @@ import Footer from '../components/Footer';
 import axios from 'axios';
 
 function Usuario() {
-    const [ setProductos] = useState([]);
-
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/photos?_limit=3')
-            .then((response) => response.json())
-            .then((data) => setProductos(data))
-            .catch((error) => console.log(error));
-    }, []);
 
     const [catalogoProductos, setCatalogoProductos] = useState([]);
 
